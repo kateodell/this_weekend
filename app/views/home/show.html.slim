@@ -1,0 +1,8 @@
+h2 ="Events near #{@zip}"
+
+- @events_info.each do |event|
+  h3.event-title = event['title']
+  ul.event-details
+    li = "Venue: " + event['venue']['name']
+    li = DateTime.parse(event['startDate']).strftime('%l%P on %A, %B %e, %Y')
+    li = "Weather: #{event['weather']['main']}.  High/Low: #{event['weather']['max']}/#{event['weather']['min']}"

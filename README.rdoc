@@ -1,0 +1,8 @@
+== README
+
+This app uses a few APIs to let the user enter a zip code and get back events that are happening there in the upcoming weekend, as well as the weather forecast for each event.
+
+The APIs used are:
+* Google Maps - to convert zip to lat/long coordinates
+* Last.fm - to get the event data (http://www.last.fm/api/show/geo.getEvents)
+* OpenWeatherMap - to get the weather for each event's location (http://openweathermap.org/API#forecast)

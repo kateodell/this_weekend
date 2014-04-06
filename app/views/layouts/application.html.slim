@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title This Weekend
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  body
+    h1 See what's happening near you this weekend...
+
+    form method='get' action='/events'
+      label Zip Code:
+      input name='zip'
+      button Find Events
+
+    = yield
