@@ -8,3 +8,5 @@ gem 'jbuilder'
 
 gem 'slim'
 gem 'faraday'
+
+gem 'rails_12factor', group: :production
