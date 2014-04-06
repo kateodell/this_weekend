@@ -12,7 +12,7 @@ ThisWeekend::Application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  config.assets.compile = false
+  config.assets.compile = true
   config.assets.digest = true
   config.assets.version = '1.0'
 
